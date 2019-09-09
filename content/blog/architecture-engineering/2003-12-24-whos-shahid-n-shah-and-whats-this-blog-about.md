@@ -1,5 +1,5 @@
 ---
-title: Who’s Shahid  Shah and what’s this blog about1?
+title: Who’s Shahid  Shah and what’s this blog about?
 author: Shahid Shah
 type: post
 url: /2003/12/24/whos-shahid-n-shah-and-whats-this-blog-about/
