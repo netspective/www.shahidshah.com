@@ -1,0 +1,29 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.media }}    {{ if .enable }}
+{{ "<!-- Media Section Start -->" | safeHTML }}
+<section class="team section" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center"><h2>{{ .title }}</h2></div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .member }}
+            {{ "<!-- media member -->" | safeHTML }}
+                <div class="col-12 col-md-3 col-sm-6">
+                    <div class="team-member text-center">
+                        <div class="member-photo">
+                            <a href="{{ .link }}" target="_blank" ><img class="img-fluid" src="{{.image | absURL }}" alt="image"></a>
+                        </div>                           
+                    </div>
+                </div> 
+            {{ "<!-- end media member -->" | safeHTML }}
+            {{ end }}
+        </div>
+    </div>        
+    <div class="more-view"><a href="{{ "mediacoverage/" }}" >More..</a></div>
+</section>
+{{ "<!-- End section -->" | safeHTML }}
+{{ end }}
+{{ end }}

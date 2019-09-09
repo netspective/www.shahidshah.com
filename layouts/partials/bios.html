@@ -1,0 +1,38 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.bios }}
+    {{ if .enable }}
+    <div class="container">
+        <div class="title-page"><h2>{{ .title }}</h2></div>
+        <div class="row">
+            {{ range .item }} 	
+            {{ "<!-- About -->" | safeHTML }}  							
+            <div class="col-md-12">
+                <div class="bios-heading">
+                   <h3 class="biosh3"> {{ .title }}</h3>
+                </div>
+                <div class="bios-para">
+                    <p>{{ .para1 }}</p>
+                </div>
+                <div class="bios-para">
+                    <p> {{ .para2 }}</p>
+                </div>
+                 <div class="bios-para">
+                    <p> {{ .para3 }}</p>
+                </div>
+            </div>
+            {{ end }}                              
+        </div>         
+        <p class="picclass">{{ .picturetext }}</p>        
+        <p>{{ .subtext }}</p>        
+        <a href="{{ .image1 }}" target="_blank"><img src="{{ .image1 }}" alt="image" width="300" height="204"><a>
+        <p>{{ .image1Label }}</p>
+        <a href="{{ .image2 }}" target="_blank"><img src="{{ .image2 }}" alt="image" width="150" height="225"><a>
+        <p>{{ .image2Label }}</p>
+        <a href="{{ .image3 }}" target="_blank"><img src="{{ .image3 }}" alt="image" width="150" height="225"><a>
+        <p>{{ .image3Label }}</p>
+    </div>
+{{ end }}
+{{ end }}
+
+
+

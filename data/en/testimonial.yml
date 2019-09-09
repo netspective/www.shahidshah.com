@@ -1,0 +1,74 @@
+enable: true
+title: Recommendations
+item:
+  - clientDesignation: Founder & CEO at Clinical Referral Directories and Imagine Media Partners
+    clientDuration: 'January 16, 2014, Tolga U. worked with Shahid but at different companies'
+    clientName: Tolga U. Ural
+    clientThumb: /images/clients-1.jpg
+    quote: >-
+      I had the pleasure of attending Shahid's social media webinar and found it
+      to be very informative, full of great tips for next month's HIMMS. His
+      direct style really makes you take a good look at where you stand to
+      improve your messaging and how best to prioritize solving the customer's
+      problems and see things from their perspective.
+  - clientDesignation: Serial Entrepreneur
+    clientDuration: 'December 1, 2013, Shahid worked with Jeff in the same group'
+    clientName: Jeff Lamkin
+    clientThumb: images/clients-2.jpg
+    quote: >
+      Shahid is a man you can count on! When times get tough and you look around
+      to see who will fight the fight with you, Shahid will be by your side. He
+      is self motivated, extremely smart and capable of getting it done. He is a
+      superb manager and also willing to roll up his sleeves to do it himself
+      when that is the best solution. We can all learn a few things from
+      Shahid! 
+  - clientDesignation: Senior Technology Architect at Accenture
+    clientDuration: 'May 10, 2013, Eduardo worked with Shahid but at different companies'
+    clientName: Eduardo G.
+    clientThumb: images/clients-3.jpg
+    quote: >
+      I met Shahid at the Dell Think Tank on Healthcare earlier this year. He
+      was very knowledgeable about the economics behind HITECH and the
+      widespread adoption of EMR technology, and how these fit within the
+      regulatory framework. He obviously has a great deal of experience in the
+      industry, and provides thought leadership. I look forward to working with
+      Shahid in future projects and/or initiatives.
+  - clientDesignation: Cynical Blowhard Healthcare IT Blogger
+    clientDuration: 'June 23, 2016, Shahid worked with Tim in different groups'
+    clientName: Tim Histalk
+    clientThumb: images/no-image.jpg
+    quote: >
+      Like Tim, I'm a health IT blogger and I read HIStalk because the writing
+      is prescient, accurate, useful, and relevant. Getting healthcare
+      technology content right and keeping it readable is really tough but
+      somehow Tim makes it look so easy. As a fellow blogger I've often read
+      articles on HIStalk which makes me say "gosh, I wish I wrote that!" I've
+      read Tim and his publications from day 1, will continue to read them on my
+      own, and will continue to recommend them highly to everyone else who wants
+      intelligible advice on healthcare technology. 
+  - clientDesignation: 'SVP Care Logistics, a Jackson Healthcare Company'
+    clientDuration: 'November 12, 2014, Stephen worked with Shahid in the same group'
+    clientName: Stephen Passalacqua
+    clientThumb: images/clients-5.jpg
+    quote: >
+      As simplifyMD, a SaaS based EHR, moved from its seed startup to venture
+      funded growth and scale phases we asked Stephen to lead us as our COO. His
+      command of operations leadership skills has all the strengths of precision
+      when required but with enough agility to make sure a modern SaaS based
+      software platform like ours could succeed. He came in and systematized our
+      delivery process, regularized customer acquisition steps, formalized our
+      services, deepened our support team, and basically did everything that
+      goes into making a software company successful. If you need a senior
+      leader with significant health IT skills that knows how to get things
+      done, Stephen's your man 
+  - clientDesignation: Product Manager at ChronicCareIQ
+    clientDuration: 'October 14, 2013, Shahid was senior to Susan but didn’t manage directly'
+    clientName: Susan Beecham
+    clientThumb: images/clients-6.jpg
+    quote: >
+      Susan is one of those rare individuals in business that just loves working
+      with customers, especially physician offices and their staff. She was a
+      big reason for the early success of simplifyMD and Susan was one of the
+      main the reasons why customers loved the company. Susan's leadership on
+      the product design, customer support, and especially training teams
+      priceless. 

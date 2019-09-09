@@ -1,0 +1,229 @@
+baseURL = "https://shahid-shah.netlify.com/"
+languageCode = "en-us"
+title = "Navigator | Responsive Multipurpose Bootstrap Hugo Template"
+theme = "navigator-hugo"
+disqusShortname = "shah"
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
+googleAnalytics = ""
+
+enableGitInfo = false
+pygmentsCodeFences = true
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+disableLanguages = ["fr", "ja"]
+
+# Site Params
+[params]
+    logo = "images/logo.png"
+
+    # Gestion des langues : FR / EN / NL / DE
+    [[Params.listeLangues]]
+    code = "fr"
+    [[Params.listeLangues]]
+    code = "en"
+
+# Gestion des langues : FR / EN / NL / DE
+[Languages]
+   
+
+    ############# 2 - Site en ENGLISH
+    [Languages.en]
+    weight = 2
+    languageCode = "en-us"
+    title = "Shahid Shah - Gov 2.0, Health IT, Bio IT & digital Medical Device CTO, Speaker, Entrepreneur"
+    dateFormat = "January 2, 2006"
+
+    home = "Home"
+    menufixed = false
+
+    
+    # Hero Area Section
+    [Languages.en.params.hero]
+        enable  = true
+        heading = "Shahid Shah is an award-winning Government 2.0, Health IT, Bio IT & digital Medical Device Inventor & CTO with over 29 years of technology strategy, architecture, engineering, entrepreneurship, speaking, and writing experience."
+        button  = true
+        btnText1 = "Follow Me On Twitter"
+        btnText2 = "Invite me to speak"
+        targetst = "_blank"
+        btnURL  = "https://twitter.com/ShahidNShah"
+        btnURL2  = "contact/"
+
+
+    # Blog Section On Homepage
+    [Languages.en.params.blog]
+        enable  = true
+        title   = "Blogs"
+    
+    # Contact Section
+    [Languages.en.params.contact]
+        enable  = true
+        title   = "Contact Us."
+        facebook= "https://www.facebook.com/shahid.n.shah"
+        twitter = "https://twitter.com/ShahidNShah"
+        linkedin= "https://www.linkedin.com/in/shahidshah"
+          
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        identifier = "Blog"
+        name    = "Blog"
+        url     = "blog"
+        weight  = 2
+    
+    [[menu.nav]]
+        parent = "Blog"
+        name    = "Architure & Engineering"
+        url     = "blog/architecture-engineering/"
+        weight  = 2
+    [[menu.nav]]
+        parent = "Blog"
+        name    = "Digital Health"
+        url     = "http://www.HealthcareGuy.com"
+        weight  = 2
+       
+    [[menu.nav]]
+        name    = "Profile"
+        url     = "https://www.linkedin.com/in/ShahidShah"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Speaking Schedule"
+        url     = "speaking-schedule"
+        weight  = 4
+    [[menu.nav]]
+        name    = "Speaker Decks"
+        url     = "https://speakerdeck.com/shah/"
+        weight  = 5
+    [[menu.nav]]
+        name    = "Speech Abstracts"
+        url     = "speech-abstracts"
+        weight  = 6
+    [[menu.nav]]
+        name    = "IP"
+        url     = "intellectual-property"
+        weight  = 7
+    [[menu.nav]]
+        name    = "Videos"
+        url     = "https://www.netspective.com/about-us/netspective-tv/"
+        weight  = 8
+    [[menu.nav]]
+        name    = "Gallery"
+        url     = "contact"
+        weight  = 9
+    [[menu.nav]]
+        parent = "Gallery"
+        name    = "Shahid Shah"
+        url     = "/gallery/"
+        weight  = 2
+    [[menu.nav]]
+        parent = "Gallery"
+        name    = "Conference"
+        url     = "/conference/"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Bios"
+        url     = "bios"
+        weight  = 10
+
+    # Footer Service Menu
+    [[menu.service]]
+        name    = "shahid.shah.org"
+        url     = "#"
+        weight  = 1
+    [[menu.service]]
+        name    = "www.HealthcareGuy.com"
+        url     = "http://www.HealthcareGuy.com"
+        weight  = 2
+    [[menu.service]]
+        name    = "www.ShahidShah.com"
+        url     = "#"
+        weight  = 3
+    [[menu.service]]
+        name    = "www.shahid.io"
+        url     = "#"
+        weight  = 4
+    [[menu.service]]
+        name    = "www.FederalArchitect.com"
+        url     = "#"
+        weight  = 5
+    [[menu.service]]
+        name    = "www.about.me"
+        url     = "#"
+        weight  = 6
+    [[menu.service]]
+        name    = "www.speakerdeck.com"
+        url     = "https://speakerdeck.com/shah/"
+        weight  = 7
+
+    # Footer Quick links Menu
+    [[menu.quicklink]]
+        name    = "Contact Me"
+        url     = "/contact"
+        weight  = 1
+    [[menu.quicklink]]
+        name    = "Terms & Conditions"
+        url     = "#"
+        weight  = 2
+    [[menu.quicklink]]
+        name    = "Privacy Policy"
+        url     = "#"
+        weight  = 3
+
+    # Footer Part1  Menu
+    [[menu.part1]]
+        name    = "Profile"
+        url     = "https://www.linkedin.com/in/ShahidShah"
+        weight  = 1
+    [[menu.part1]]
+        name    = "Speaking Schedule"
+        url     = "/speaking-schedule/"
+        weight  = 2
+    [[menu.part1]]
+        name    = "Speaker Decks"
+        url     = "https://speakerdeck.com/shah/"
+        weight  = 3
+    [[menu.part1]]
+        name    = "Publications"
+        url     = "https://newsle.com/shah"
+        weight  = 4
+    [[menu.part1]]
+        name    = "Social Media"
+        url     = "#"
+        weight  = 5
+    [[menu.part1]]
+        name    = "Videos"
+        url     = "https://www.netspective.com/about-us/netspective-tv/"
+        weight  = 6
+    [[menu.part1]]
+        name    = "Portfolio"
+        url     = "#"
+        weight  = 7
+       
+    [[menu.topmenu]]
+        name    = "Contact Me"
+        url     = "contact"
+        weight  = 3
+      
+    [[menu.topmenu]]
+        name    = "HealthcareGuy.com"
+        url     = "https://www.healthcareguy.com/"
+        weight  = 3
+    
+    [[menu.topmenu]]
+        name    = "ShahidShah.com"
+        url     = "http://shahidshah.com/"
+        weight  = 3
+       
+    [[menu.topmenu]]
+        name    = "FedSphere.com"
+        url     = "https://www.fedsphere.com/"
+        weight  = 3
+      

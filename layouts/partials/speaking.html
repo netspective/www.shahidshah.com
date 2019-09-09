@@ -1,0 +1,30 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.speaking }}
+    {{ if .enable }}
+    {{ "<!-- past speaking engagements Section Start -->" | safeHTML }}
+    <section class="team past-speaking-col" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title text-center"><h2> {{ .title }}</h2></div>
+                </div>
+            </div>
+            <div class="row">
+                {{ range .member }}
+                    {{ "<!-- speaking logo item -->" | safeHTML }}
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="team-member text-center">
+                            <div class="member-photo">
+                               <a href="{{ .link }}" target="_blank" > <img class="img-fluid" src="{{.image | absURL }}" alt="logo"></a>
+                            </div>                           
+                        </div>
+                    </div> 
+                    {{ "<!-- end item -->" | safeHTML }}
+                {{ end }}
+            </div>
+        </div>        
+        <div class="more-view"><a href="{{ "speaking-schedule/" }}" >More..</a></div>
+    </section>
+    {{ "<!-- End section -->" | safeHTML }}
+    {{ end }}
+{{ end }}

@@ -1,0 +1,106 @@
+enable: true
+title: Speaker Decks
+item:
+  - active: active
+    image: /images/slide01.jpg
+    link: >-
+      https://speakerdeck.com/shah/opportunities-created-by-healthcares-adoption-of-ai-and-machine-learning
+  - active: ''
+    image: /images/slide02.jpg
+    link: 'https://speakerdeck.com/shah/what-comes-after-rest'
+  - image: /images/slide03.jpg
+    link: >-
+      https://speakerdeck.com/shah/dhin-summer-summit-finding-the-humans-in-health-it
+  - image: /images/slide044.jpg
+    link: >-
+      https://speakerdeck.com/shah/reimagining-physician-payer-collaboration-for-the-real-time-digital-age
+  - image: /images/slide05.jpg
+    link: 'https://speakerdeck.com/shah/practical-risk-management-for-medical-devices'
+  - image: /images/slide06.jpg
+    link: 'https://speakerdeck.com/shah/cybersecurity-in-healthcare'
+  - image: /images/slide07.jpg
+    link: >-
+      https://speakerdeck.com/shah/himss-qatar-keynote-innovation-in-healthcare-and-biomedicine-for-the-future
+  - image: /images/slide08.jpg
+    link: >-
+      https://speakerdeck.com/shah/digital-medicine-conference-2017-tech-immersion-kick-off
+  - image: /images/slide09.jpg
+    link: >-
+      https://speakerdeck.com/shah/overcoming-overutilization-of-poorly-defined-healthcare-messaging-systems
+  - image: /images/slide10.jpg
+    link: >-
+      https://speakerdeck.com/shah/how-clinicians-can-adapt-to-rise-of-machine-learning-and-ai
+  - image: /images/slide11.jpg
+    link: >-
+      https://speakerdeck.com/shah/reimagining-healthcare-and-medical-quality-measurements
+  - image: /images/slide121.png
+    link: 'https://speakerdeck.com/shah/top-down-vs-bottom-up-risk-governance'
+  - image: /images/slide1213.jpg
+    link: >-
+      https://speakerdeck.com/shah/the-no-bs-guide-to-innovation-in-healthcare-and-when-it-should-matter-to-marketers
+  - image: /images/slide13.jpg
+    link: >-
+      https://speakerdeck.com/shah/hl7-partners-in-interoperability-fhir-for-value-based-care
+  - image: /images/slide14.jpg
+    link: >-
+      https://speakerdeck.com/shah/how-to-develop-innovative-solutions-that-drive-patient-behavior-change
+  - image: /images/slide15.jpg
+    link: >-
+      https://speakerdeck.com/shah/top-7-things-healthcare-institutions-must-in-do-in-2017-to-remain-both-hipaa-compliant-and-truly-secure
+  - image: /images/slide16.jpg
+    link: >-
+      https://speakerdeck.com/shah/hl7-payer-summit-keynote-overview-of-macra-and-mips-for-health-insurers
+  - image: /images/slide17.jpg
+    link: >-
+      https://speakerdeck.com/shah/inflective-vs-reflexive-health-insurance-innovation
+  - image: /images/slide18.jpg
+    link: >-
+      https://speakerdeck.com/shah/hxrefactored-2016-keynote-the-no-bs-guide-to-future-proofing-your-digital-health-product-development-approach
+  - image: /images/slide19.jpg
+    link: >-
+      https://speakerdeck.com/shah/nyvca-and-cta-2016-keynote-surprising-fundraising-lessons-healthcare-startups-fail-to-learn
+  - image: /images/slide20.jpg
+    link: >-
+      https://speakerdeck.com/shah/healthcare-opportunities-for-smart-sis-and-solution-providers
+  - image: /images/slide21.jpg
+    link: >-
+      https://speakerdeck.com/shah/the-realities-of-healthcare-enterprise-data-interoperability-and-integration
+  - image: /images/slide22.jpg
+    link: >-
+      https://speakerdeck.com/shah/open-and-free-tools-for-whole-of-government-approaches-to-cybersecurity
+  - image: /images/slide23.jpg
+    link: >-
+      https://speakerdeck.com/shah/the-no-bs-guide-to-developing-a-healthcare-enterprise-integration-strategy
+  - image: /images/slide24.jpg
+    link: >-
+      https://speakerdeck.com/shah/cisq-quality-standard-overview-and-integrating-security-into-your-systems-development-lifecycle-sdlc
+  - image: /images/slide25.jpg
+    link: >-
+      https://speakerdeck.com/shah/how-existing-big-data-technologies-are-impacting-next-generation-isr
+  - image: /images/slide26.jpg
+    link: >-
+      https://speakerdeck.com/shah/creating-resilient-software-defined-networks-sdn
+  - image: /images/slide27.jpg
+    link: >-
+      https://speakerdeck.com/shah/demand-connected-medical-devices-to-improve-military-ehrs
+  - image: /images/slide28.jpg
+    link: >-
+      https://speakerdeck.com/shah/the-biggest-opportunities-in-digital-health-for-turkeys-medical-sector
+  - image: /images/slide29.jpg
+    link: >-
+      https://speakerdeck.com/shah/reasons-why-health-data-is-poorly-integrated-today-and-what-we-can-do-about-it-1
+  - image: /images/slide30.jpg
+    link: >-
+      https://speakerdeck.com/shah/how-to-use-open-source-technologies-in-safety-critical-digital-health-applications-and-medical-device-software
+  - image: /images/slide31.jpg
+    link: >-
+      https://speakerdeck.com/shah/open-source-is-a-great-opportunity-for-ehr-digital-health-and-health-it-integrators
+  - image: /images/slide32.jpg
+    link: >-
+      https://speakerdeck.com/shah/hxrefactored-stop-dreaming-about-fluid-data-interoperability-and-start-focusing-on-actionable-enterprise-systems-integration
+  - image: /images/slide33.jpg
+    link: >-
+      https://speakerdeck.com/shah/the-shift-from-fee-for-service-to-outcomes-driven-care-means-huge-opportunities-for-systems-integrators-and-service-providers-who-know-how-to-deal-with-data
+  - image: /images/slide34.jpg
+    link: >-
+      https://speakerdeck.com/shah/architecting-designing-and-building-medical-devices-in-an-outcomes-focused-big-data-world

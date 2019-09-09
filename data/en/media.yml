@@ -1,0 +1,19 @@
+enable: true
+title: Media Coverage
+member:
+  - image: /images/politico_logo.jpg
+    link: http://www.politico.com/morningehealth/0614/morningehealth14180.html
+  - image: images/eweek_logo.jpg
+    link: http://www.eweek.com/enterprise-apps/obama-administration-seeks-investigation-into-billing-fraud-due-to-ehrs/
+  - image: images/IW_logo.jpg
+    link: http://newsle.com/article/0/125534843/
+  - image: images/o_reilly_logo.jpg
+    link: http://strata.oreilly.com/2014/02/how-does-the-medical-device-tax-affect-innovation-and-the-healthmedical-startup-scene.html
+  - image: images/mddi_logo.jpg
+    link: http://newsle.com/article/0/122021555/
+  - image: images/crux_logo.jpg
+    link: http://newsle.com/article/0/146956855/
+  - image: images/federal_news.jpg
+    link: http://www.federalnewsradio.com/?nid=&sid=1684861
+  - image: images/healthcare_logo.jpg
+    link: http://newsle.com/article/0/122780770/

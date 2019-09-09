@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="title-page"><h2>Speaking Schedule</h2></div>
+    <div class="upcoming col-12 col-md-6 "><h4 class="upcoming_head">Upcoming speaking appearances</h4></div>
+    {{ if .Site.Params.contact.enable }}     
+    {{ "<!-- Contact Form -->" | safeHTML }}
+        <div class="contact-form col-12 col-md-6 ">
+            <h4 class="upcoming_head">Invite me to speak at your event</h4>
+            <form id="contact-form" class="gform pure-form pure-form-stacked" method="post" action="https://formspree.io/divya.ts@citrusinformatics.com" role="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" class="form-control" name="name" id="name" required > 
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Event Name" class="form-control" name="eventname" id="eventname" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Event Location" class="form-control" name="eventlocation" id="eventlocation" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="6" placeholder="Event Details" class="form-control" name="eventdetails" id="eventdetails" required ></textarea>
+                </div>
+                <div id="cf-submit">
+                    <input type="submit" id="contact-submit" class="btn btn-main" value="Send">
+                </div>
+            </form>                     
+        </div>           
+    {{ end }}
+</div>
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.pastspeaking }}
+    {{ if .enable }}
+    <div class="container">
+        <p><h4 class="upcoming_head">{{ .title }}</h4></p>
+        <div class="row">           
+            {{ range .item }} 	
+            {{ "<!-- speaking schedule -->" | safeHTML }}  							
+            <div class="col-sm-6">               
+                <div class="media_coverage_new_wrapper">
+                    <div class="media_coverage_new_logo_container"><p><img class="img-responsive" src="{{ .Logo }}"></p></div>
+                    <div class="media_coverage_new_txt_container">
+                        <p class="media_coverage_heading_p">
+                            <a target="_blank" href="{{ .Link }}" data-wpel-link="external" rel="external noopener noreferrer">{{ .Title }}</a>
+                        </p>
+                        <p class="media_coverage_date_p">{{ .Place }}</p>
+                        <p class="media_coverage_date_p">{{ .Date }}</p>
+                    </div> 
+                </div>                   
+            </div>
+            {{ end }}                              
+        </div>
+    </div>
+{{ end }}
+{{ end }}

@@ -1,0 +1,19 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.youtubevideos }}
+{{ if .enable }}
+<div class="video-slider">
+    {{ range .item }} 
+    {{ "<!-- slider single -->" | safeHTML }} 
+    <div class="video-slide">  
+        <a href="{{ .link }}"  target="_blank"><img class="video-image" src="{{ .image }}"> </a> 
+        <div class="text-block">
+            <h6>{{ .caption }}</h6>
+        </div>                      
+    </div>
+    {{ end }}  
+    <div class="slide-arrow left"></div>
+    <div class="slide-arrow right"></div>
+</div>
+{{ end }}  
+{{ end }}  
+

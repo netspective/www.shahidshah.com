@@ -1,0 +1,224 @@
+backend:
+  name: git-gateway
+
+media_folder: "static/images" # Folder where user uploaded files should go
+public_folder: "images"
+
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    folder: "content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "author", name: "author", widget: "string"}
+      - {label: "type", name: "type", widget: "string", required: false}
+      - {label: "url", name: "url", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "text" , required: false}         
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "architecture" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Architecture & Engineering" # Used in the UI, ie.: "New Post"
+    folder: "content/blog/architecture-engineering" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "author", name: "author", widget: "string"}
+      - {label: "type", name: "type", widget: "string", required: false}
+      - {label: "url", name: "url", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "text" , required: false}         
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "sections"
+    label: "sections"
+    files:
+      - file: "data/en/intellectualproperty.yml"
+        label: "Intellectual property"
+        name:  "intellectualproperty"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: heading, name: title, widget: string}
+            - label : "intellectualpropertyItem"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Patent", name: "Patent", widget: "string"}
+                - {label: "Title", name: "Title", widget: "string"}
+                - {label: "Overview", name: "Overview", widget: "string"}
+                - {label: "Link", name: "Link", widget: "string"}
+      - file: "data/en/testimonial.yml"
+        label: "Recommendations"
+        name:  "Recommendations"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Recommendations"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Quote", name: "quote", widget: "string"}
+                - {label: "Client Image", name: "clientThumb", widget: "image"}
+                - {label: "Client Name", name: "clientName", widget: "string"}  
+                - {label: "Client Designation", name: "clientDesignation", widget: "string"}
+                - {label: "Client Duration", name: "clientDuration", widget: "string"}
+      - file: "data/en/youtubevideos.yml"
+        label: "Home page Video slider"
+        name:  "homepageslider"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - label : "Home Page Video slider"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Video Link", name: "link", widget: "string"}
+                - {label: "Video Image", name: "image", widget: "image"}
+                - {label: "Video Caption", name: "caption", widget: "string"} 
+      - file: "data/en/speechabstracts.yml"
+        label: "Speech Abstracts"
+        name:  "speechabstract"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: Title, name: title, widget: string}
+            - label : "Speech Abstracts"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Speech title", name: "title", widget: "string"}
+                - {label: "Sub description", name: "subdesc", widget: "string"}  
+      - file: "data/en/mediacoverage.yml"
+        label: "Media coverage"
+        name:  "mediacoverage"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - label : "Media coverage"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Name", name: "Name", widget: "string"}
+                - {label: "Title", name: "Title", widget: "string"} 
+                - {label: "Date", name: "Date", widget: "string"}
+                - {label: "Logo Link", name: "Logolink", widget: "string"} 
+                - {label: "Link", name: "Link", widget: "string"}
+      - file: "data/en/gallery.yml"
+        label: "Gallery"
+        name:  "gallery"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Gallery"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Image", name: "image", widget: "image"} 
+      - file: "data/en/conference.yml"
+        label: "Conference"
+        name:  "conference"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Conference"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Image", name: "image", widget: "image"} 
+      - file: "data/en/exp.yml"
+        label: "Experience"
+        name:  "experience"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Experience"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Quote", name: "quote", widget: "string"}
+                - {label: "Client Image", name: "clientThumb", widget: "image"}
+                - {label: "Client Name", name: "clientName", widget: "string"}  
+                - {label: "Client Designation", name: "clientDesignation", widget: "string"}
+                - {label: "Client Duration", name: "clientDuration", widget: "string"} 
+      - file: "data/en/endorsement.yml"
+        label: "Endorsement"
+        name:  "endorsement"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Endorsement"
+              name  : "item"
+              widget: "list"
+              fields:              
+                - {label: "Image", name: "image", widget: "image"}
+      - file: "data/en/bios.yml"
+        label: "Bios"
+        name:  "bios"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: title, name: title, widget: string}
+            - {label: Picture Heading, name: picturetext, widget: string}
+            - {label: Picture subheading, name: subtext, widget: string}
+            - {label: Image 1, name: image1, widget: image}
+            - {label: image1 caption, name: image1Label, widget: string}
+            - {label: Image 2, name: image2, widget: image}
+            - {label: image2 caption, name: image2Label, widget: string}
+            - {label: Image 3, name: image3, widget: image}
+            - {label: image3 caption, name: image3Label, widget: string}
+            - label : "Bios"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "title", name: "title", widget: "string"}
+                - {label: "paragraph 1", name: "para1", widget: "string"}
+                - {label: "paragraph 2", name: "para2", widget: "string"}
+                - {label: "paragraph 3", name: "para3", widget: "string"}
+      - file: "data/en/pastspeaking.yml"
+        label: "Speaking Schedule"
+        name:  "speakingschedule"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Speaking Schedule"
+              name  : "item"
+              widget: "list"
+              fields:
+                - {label: "Title", name: "Title", widget: "string"}
+                - {label: "Place", name: "Place", widget: "string"}
+                - {label: "Date", name: "Date", widget: "string"}
+                - {label: "Logo", name: "Logo", widget: "image"} 
+                - {label: "Link", name: "Link", widget: "string"}  
+      - file: "data/en/media.yml"
+        label: "Media"
+        name:  "media"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Media"
+              name  : "member"
+              widget: "list"
+              fields:               
+                - {label: "Image", name: "image", widget: "image"} 
+                - {label: "Link", name: "link", widget: "string"}
+      - file: "data/en/speaking.yml"
+        label: "Past Speaking Engagements"
+        name:  "speakingengagements"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Past Speaking Engagements "
+              name  : "member"
+              widget: "list"
+              fields:               
+                - {label: "Image", name: "image", widget: "image"} 
+                - {label: "Link", name: "link", widget: "string"}
+      - file: "data/en/speakerdecks.yml"
+        label: "Speaker Decks"
+        name:  "speakerdecks"
+        fields:
+            - {label: enable, name: enable, widget: boolean, default: true}
+            - {label: "Title", name: "title", widget: "string"}
+            - label : "Speaker Decks"
+              name  : "item"
+              widget: "list"
+              fields:               
+                - {label: "Image", name: "image", widget: "image"} 
+                - {label: "Link", name: "link", widget: "string"}
+                - {label: "Active slide", name: "active", widget: "string"}

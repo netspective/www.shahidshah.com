@@ -1,0 +1,11 @@
+enable: true
+title: Past Speaking Engagements
+member:
+  - image: /images/MITSloan.png
+    link: http://www.cvent.com/events/2014-mit-sloan-cio-symposium/event-summary-599d8c57f62f4da189c80f158694cd84.aspx
+  - image: images/scansource.png
+    link: http://www.scansourceposbarcode.com/en/training/events/ss-bsm-smart-var-summit-1
+  - image: images/imn_logo.png
+    link: http://tcbi.org/hcub13/
+  - image: images/healthcare.png
+    link: http://www.imn.org/conference/Health-Impact-East/Agenda.html

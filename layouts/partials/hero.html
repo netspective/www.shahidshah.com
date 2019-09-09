@@ -1,0 +1,100 @@
+{{ if .Site.Params.hero.enable }}
+{{ "<!-- Hero Area -->" | safeHTML }}
+<section class="hero-area" >
+    <div class="container">
+        <div class="row">
+            {{ with .Site.Params.hero.heading }}
+                 <h4 ><em>{{ . }}</em></h4>
+            {{ end }}
+            <div class="col-lg-7 col-md-12">
+                 {{ partial "homeslider.html" . }}
+            </div>
+            <div class="col-lg-5 col-md-12">
+                {{ if .Site.Params.hero.button }}
+                    <ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
+                        <li class="list-inline-item">
+                            <a href="{{ with .Site.Params.hero.btnURL }}{{.}}{{ end }}" target="{{ with .Site.Params.hero.targetst }}{{.}}{{ end }}" class="btn btn-main">{{ with .Site.Params.hero.btnText1 }}{{.}}{{ end }}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <button  class="btn btn-main" id="c-btn">{{ with .Site.Params.hero.btnText2 }}{{.}}{{ end }}</button>
+                        </li>                        
+                    </ul>
+                {{ end }}
+                <div class="col-sm-12">
+                    <ul style="list-style:none; padding:0px; margin:0px;">
+                        <li class="li_colone">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/recommendation_icon.png" alt="#" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">22</p>
+                            <p class="statistics_span2">recommendations</p>
+                        </li>
+                        <li class="li_coltwo">
+                            <p class="new_statistics_icon_p"><a href="/intellectual-property/" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/patent_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1"><a href="/intellectual-property/" style="text-decoration:none;" data-wpel-link="internal">14</a></p>
+                            <p class="statistics_span2">patents</p>
+                        </li>
+                        <li class="li_coltwo">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/company_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">05</p>
+                            <p class="statistics_span2">companies founded</p>
+                        </li>
+                        <li class="li_colthree">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/cto_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">09</p>
+                            <p class="statistics_span2">CTO roles</p>
+                        </li>
+                        <li class="li_colthree">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/endorsements_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">1322</p>
+                            <p class="statistics_span2">endorsements</p>
+                        </li>
+                        <li class="li_colfour">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/speaking_events_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">133</p>
+                            <p class="statistics_span2">speaking events</p>
+                        </li>
+                        <li class="li_colone">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/speakerdecks_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">54</p>
+                            <p class="statistics_span2">speaker decks</p>
+                        </li>
+                        <li class="li_coltwo">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/customers_served_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">32</p>
+                            <p class="statistics_span2">customers served</p>
+                        </li>
+                        <li class="li_colthree">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/engineer_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">29</p>
+                            <p class="statistics_span2">years as engineer</p>
+                        </li>
+                        <li class="li_colone">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/regulated_IT_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">24</p>
+                            <p class="statistics_span2">years in regulated IT</p>
+                        </li>
+                        <li class="li_coltwo">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/health_IT_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">24</p>
+                            <p class="statistics_span2">years in health IT</p>
+                        </li>
+                        <li class="li_colthree">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/Gov_IT_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">17</p>
+                            <p class="statistics_span2">years in Gov IT</p>
+                        </li>
+                        <li class="li_colone">
+                            <p class="new_statistics_icon_p"><a href="#" data-wpel-link="internal"><img src="http://shahidshah.com/wp-content/themes/shahidpersonal/images/Bio_IT_icon.png" class="img-respons" width="48px" border="0"></a></p>
+                            <p class="statistics_span1">15</p>
+                            <p class="statistics_span2">years in Bio IT</p>
+                        </li>
+                    </ul>
+                <div class="hero_view_more"> <a class="more-bt-2" target="_blank" href="http://www.linkedin.com/profile/view?id=229351">View More</a></div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ partial "contactpopup.html" . }}
+
+

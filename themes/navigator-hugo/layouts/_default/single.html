@@ -1,0 +1,64 @@
+{{ define "main" }}
+<section class="blog-single section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                 <h2>{{ .Title }}</h2>
+                <!-- <div class="post-meta mb-5"> -->
+                    <div class="post-meta">
+                    <ul class="list-inline">
+                        <!--<li class="list-inline-item">
+                            <span>By</span>
+                            {{ .Params.author }}
+                        </li> -->
+                        <li class="list-inline-item">                            
+                            <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
+                        </li>
+                    </ul>
+                </div>
+                {{ .Content }}
+                <br>
+                <!-- Method 3 starts -->
+                    {{ $title := .Title }}
+                    {{ $url := printf "%s" .Permalink | absLangURL }}
+                    {{ $body := print "\n\n" $url "\n" }}
+                    <div id="sharing">
+                        <a href="http://www.facebook.com/sharer.php?u={{ $url }}" target="_blank" class="facebook" aria-label="share on Facebook">
+                        <img src="/images/facebook_counter.png" width="60px" >
+                        </a>
+                        <a href="http://twitter.com/share?url={{ $url }}&text={{ $title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}" target="_blank"  class="twitter" aria-label="share on Twitter">
+                            <img src="/images/twitter_counter.png" width="60px" >
+                        </a>
+                        <a href="mailto:?subject=Check%20out%20{{ $title }}.&body={{ $body }}"  target="_blank" class="twitter" aria-label="share on Email">
+                            <img src="/images/email_counter.png" width="60px" >
+                        </a>
+                    </div>
+                    <br>
+                    {{ template "_internal/disqus.html" . }}
+
+                    {{ "<!-- Contact Form -->" | safeHTML }}
+                    <!--<div><h4>Leave a Reply</h4><p>Your email address will not be published. Required fields are marked *</p></div>
+                    <div class="Reply-form col-12 col-md-6 ">
+                        <form id="reply-form" method="post" action="#" role="form">
+                            <div class="form-group">
+                                <textarea rows="6" placeholder="Comment" class="form-control" name="Comment" id="Comment"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name (Required)" class="form-control" name="name" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email (Required)" class="form-control" name="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Website" class="form-control" name="website" id="website">
+                            </div>                            
+                            <div id="cf-submit">
+                                <input type="submit" id="contact-submit" class="btn" value="Post comment">
+                            </div>
+                        </form>
+                    </div> -->
+                </div> 
+            </div>
+        </div>
+    </section>
+{{ end }}

@@ -1,0 +1,31 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.intellectualproperty }}
+{{ if .enable }}
+<div class="container">                         
+    <div class="title-page"><h2>{{ .title }}</h2></div>
+    <p></p>
+    <div class="table-responsive">
+        <table class="table table-striped table-txt-1">                    
+            <tr>
+                <th>Patent</th>
+                <th>Title</th>
+                <th>Overview</th>
+            </tr>                                  
+            {{ range .item }} 
+                {{ "<!-- ip single -->" | safeHTML }}  
+                <tr>
+                    <td><a href="{{ .Link }}" target="_blank">{{ .Patent }}</a></td>
+                    <td>{{ .Title }}</td>
+                    <td>{{ .Overview }}</td>
+                </tr>                                                                    
+            {{ end }}   
+        </table>  
+    </div>              
+</div>                        
+<br>
+{{ end }}
+{{ end }}
+
+
+
+ 
